@@ -1,0 +1,12 @@
+{
+  "countries": [
+    { "country_id": 1, "en-name": "America", "jp-name": "アメリカ" },
+    { "country_id": 2, "en-name": "Itaria", "jp-name": "イタリア" },
+    { "country_id": 3, "en-name": "Japan", "jp-name": "日本" }
+  ],
+  "countries_detail": [
+    { "country_id": 1, "en-overview": "America　overview", "en-other": "America other", "jp-overview": "アメリカ概要", "jp-other": "アメリカ備考" },
+    { "country_id": 2, "en-overview": "Itaria", "en-other": "Itaria other", "jp-overview": "イタリア概要", "jp-other": "イタリア備考" },
+    { "country_id": 3, "en-overview": "Japan　overview", "en-other": "Japan other", "jp-overview": "日本概要", "jp-other": "日本備考" }
+  ]
+}
