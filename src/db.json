@@ -1,12 +1,74 @@
 {
-  "countries": [
-    { "country_id": 1, "en-name": "America", "jp-name": "アメリカ" },
-    { "country_id": 2, "en-name": "Itaria", "jp-name": "イタリア" },
-    { "country_id": 3, "en-name": "Japan", "jp-name": "日本" }
-  ],
-  "countries_detail": [
-    { "country_id": 1, "en-overview": "America　overview", "en-other": "America other", "jp-overview": "アメリカ概要", "jp-other": "アメリカ備考" },
-    { "country_id": 2, "en-overview": "Itaria", "en-other": "Itaria other", "jp-overview": "イタリア概要", "jp-other": "イタリア備考" },
-    { "country_id": 3, "en-overview": "Japan　overview", "en-other": "Japan other", "jp-overview": "日本概要", "jp-other": "日本備考" }
-  ]
+  "countries": {
+    "ja": [
+      {
+        "country_id": 1,
+        "name": "america",
+        "name-label": "アメリカ"
+      },
+      {
+        "country_id": 2,
+        "name": "itaria",
+        "name-label": "イタリア"
+      },
+      {
+        "country_id": 3,
+        "name": "nihon",
+        "name-label": "日本"
+      }
+    ],
+    "en": [
+      {
+        "country_id": 1,
+        "name": "america",
+        "name-label": "America"
+      },
+      {
+        "country_id": 2,
+        "name": "italia",
+        "name-label": "Itaria"
+      },
+      {
+        "country_id": 3,
+        "name": "japan",
+        "name-label": "Japan"
+      }
+    ]
+  },
+  "countries_detail": {
+    "ja": [
+      {
+        "country_id": 1,
+        "overview": "アメリカ概要",
+        "other": "アメリカ備考"
+      },
+      {
+        "country_id": 2,
+        "overview": "イタリア概要",
+        "other": "イタリア備考"
+      },
+      {
+        "country_id": 3,
+        "overview": "日本概要",
+        "other": "日本備考"
+      }
+    ],
+    "en": [
+      {
+        "country_id": 1,
+        "overview": "America　overview",
+        "other": "America other"
+      },
+      {
+        "country_id": 2,
+        "overview": "Itaria",
+        "other": "Itaria other"
+      },
+      {
+        "country_id": 3,
+        "overview": "Japan　overview",
+        "other": "Japan other"
+      }
+    ]
+  }
 }
