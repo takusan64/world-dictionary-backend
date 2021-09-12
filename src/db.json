@@ -4,34 +4,40 @@
       {
         "country_id": 1,
         "name": "america",
-        "name-label": "アメリカ"
+        "nam_label": "アメリカ",
+        "name_group_id": 1
       },
       {
         "country_id": 2,
         "name": "itaria",
-        "name-label": "イタリア"
+        "name_label": "イタリア",
+        "name_group_id": 1
       },
       {
         "country_id": 3,
         "name": "nihon",
-        "name-label": "日本"
+        "name_label": "日本",
+        "name_group_id": 5
       }
     ],
     "en": [
       {
         "country_id": 1,
         "name": "america",
-        "name-label": "America"
+        "name_label": "America",
+        "name_group_id": 1
       },
       {
         "country_id": 2,
         "name": "italia",
-        "name-label": "Itaria"
+        "name_label": "Itaria",
+        "name_group_id": 9
       },
       {
         "country_id": 3,
         "name": "japan",
-        "name-label": "Japan"
+        "name_label": "Japan",
+        "name_group_id": 14
       }
     ]
   },
