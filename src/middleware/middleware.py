@@ -1,7 +1,7 @@
-class Middleware(object):
-  def __init__(self, app):
-    self.app = app
+import config
 
-  def __call__(self, environ, start_response):
-    print("middleware loaded")
-    return self.app(environ, start_response)
+def check_auth_token():
+  if config.API_AUTH_FEATURE:
+    print("authentication checked.")
+    return
+  print("no authentication checked.")

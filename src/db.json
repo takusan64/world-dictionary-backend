@@ -5,19 +5,22 @@
         "country_id": 1,
         "name": "america",
         "nam_label": "アメリカ",
-        "name_group_id": 1
+        "name_group_id": 1,
+        "name_group_label": "あ"
       },
       {
         "country_id": 2,
         "name": "itaria",
         "name_label": "イタリア",
-        "name_group_id": 1
+        "name_group_id": 1,
+        "name_group_label": "あ"
       },
       {
         "country_id": 3,
         "name": "nihon",
         "name_label": "日本",
-        "name_group_id": 5
+        "name_group_id": 5,
+        "name_group_label": "な"
       }
     ],
     "en": [
@@ -25,19 +28,22 @@
         "country_id": 1,
         "name": "america",
         "name_label": "America",
-        "name_group_id": 1
+        "name_group_id": 1,
+        "name_group_label": "A"
       },
       {
         "country_id": 2,
         "name": "italia",
         "name_label": "Itaria",
-        "name_group_id": 9
+        "name_group_id": 9,
+        "name_group_label": "I"
       },
       {
         "country_id": 3,
         "name": "japan",
         "name_label": "Japan",
-        "name_group_id": 14
+        "name_group_id": 14,
+        "name_group_label": "J"
       }
     ]
   },

@@ -1,51 +1,45 @@
 from os import read
-from flask import Flask, jsonify
-import json
+from fastapi import FastAPI, Request
 from api import countries, countries_detail
-from middleware import middleware, requestBefore
+from middleware import middleware
+import config
+from api import errors
 
-app = Flask(__name__)
-app.config.from_pyfile('pyenv.cfg')
-app.wsgi_app = middleware.Middleware(app.wsgi_app)
+app = FastAPI()
 
-default_lang = app.config['DEFAULT_LANGUAGE']
-json_file_open = open('db.json', 'r')
-json_data = json.load(json_file_open)
+default_lang = config.DEFAULT_LANGUAGE
 
 # request entry point
-@app.before_request
-def before_request():
-  req_before_func = requestBefore.RequestBefore(app)
-  req_before_func.check_auth_token()
+@app.middleware("http")
+async def entry_point(request: Request, call_next):
+  response = await call_next(request)
+  middleware.check_auth_token()
+  return response
 
 # endpoint /countries
 # return 登録されている国名を全て取得 [object]
-@app.route('/countries', methods=['GET'])
+@app.get('/countries')
 def get_countries(lang=default_lang):
   res = countries.get_countries(lang)
   return res
 
 # endpoint /countries/{country_id}
 # return 登録されている国名を全て取得 object
-@app.route('/countries/<int:country_id>', methods=['GET'])
-def get_country(country_id=None, lang=default_lang):
+@app.get('/countries/{country_id}')
+def get_country(country_id:int, lang:str=default_lang):
   res = countries.get_country(country_id, lang)
   return res
 
 # endpoint /countries_detail
 # return 登録されている国の詳細情報を全て取得 [object]
-@app.route('/countries_detail', methods=['GET'])
+@app.get('/countries_detail')
 def get_countries_detail(lang=default_lang):
   res = countries_detail.get_countries_detail(lang)
   return res
 
 # endpoint /countries_detail/{country_id}
 # return 登録されている国の詳細情報を1つ取得 object
-@app.route('/countries_detail/<int:country_id>', methods=['GET'])
-def get_country_detail(country_id=None, lang=default_lang):
+@app.get('/countries_detail/{country_id}')
+def get_country_detail(country_id:int, lang:str=default_lang):
   res = countries_detail.get_country_detail(country_id, lang)
   return res
-
-# Wake up Server
-if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=8080, debug=True)
