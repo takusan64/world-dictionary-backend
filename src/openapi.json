@@ -1,0 +1,315 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "FastAPI",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/countries": {
+      "get": {
+        "summary": "Get Countries",
+        "operationId": "get_countries_countries_get",
+        "parameters": [
+          {
+            "required": false,
+            "schema": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/language_enum"
+                }
+              ],
+              "default": "ja"
+            },
+            "name": "lang",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Response Get Countries Countries Get",
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/country"
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/countries/{country_id}": {
+      "get": {
+        "summary": "Get Country",
+        "operationId": "get_country_countries__country_id__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Country Id",
+              "type": "integer"
+            },
+            "name": "country_id",
+            "in": "path"
+          },
+          {
+            "required": false,
+            "schema": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/language_enum"
+                }
+              ],
+              "default": "ja"
+            },
+            "name": "lang",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/country"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/countries_detail": {
+      "get": {
+        "summary": "Get Countries Detail",
+        "operationId": "get_countries_detail_countries_detail_get",
+        "parameters": [
+          {
+            "required": false,
+            "schema": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/language_enum"
+                }
+              ],
+              "default": "ja"
+            },
+            "name": "lang",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Response Get Countries Detail Countries Detail Get",
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/country_detail"
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/countries_detail/{country_id}": {
+      "get": {
+        "summary": "Get Country Detail",
+        "operationId": "get_country_detail_countries_detail__country_id__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Country Id",
+              "type": "integer"
+            },
+            "name": "country_id",
+            "in": "path"
+          },
+          {
+            "required": false,
+            "schema": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/language_enum"
+                }
+              ],
+              "default": "ja"
+            },
+            "name": "lang",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/country_detail"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "title": "HTTPValidationError",
+        "type": "object",
+        "properties": {
+          "detail": {
+            "title": "Detail",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            }
+          }
+        }
+      },
+      "ValidationError": {
+        "title": "ValidationError",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "type": "object",
+        "properties": {
+          "loc": {
+            "title": "Location",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        }
+      },
+      "country": {
+        "title": "country",
+        "required": [
+          "country_id",
+          "name",
+          "name_label",
+          "name_group_id",
+          "name_group_label"
+        ],
+        "type": "object",
+        "properties": {
+          "country_id": {
+            "title": "Country Id",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "name_label": {
+            "title": "Name Label",
+            "type": "string"
+          },
+          "name_group_id": {
+            "title": "Name Group Id",
+            "type": "integer"
+          },
+          "name_group_label": {
+            "title": "Name Group Label",
+            "type": "string"
+          }
+        }
+      },
+      "country_detail": {
+        "title": "country_detail",
+        "required": [
+          "country_id",
+          "overview",
+          "other"
+        ],
+        "type": "object",
+        "properties": {
+          "country_id": {
+            "title": "Country Id",
+            "type": "integer"
+          },
+          "overview": {
+            "title": "Overview",
+            "type": "string"
+          },
+          "other": {
+            "title": "Other",
+            "type": "string"
+          }
+        }
+      },
+      "language_enum": {
+        "title": "language_enum",
+        "enum": [
+          "ja",
+          "en"
+        ],
+        "type": "string",
+        "description": "An enumeration."
+      }
+    }
+  }
+}

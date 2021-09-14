@@ -2,6 +2,13 @@
   "countries": {
     "ja": [
       {
+        "country_id": 0,
+        "name": "nihon",
+        "name_label": "日本",
+        "name_group_id": 5,
+        "name_group_label": "な"
+      },
+      {
         "country_id": 1,
         "name": "america",
         "nam_label": "アメリカ",
@@ -14,16 +21,16 @@
         "name_label": "イタリア",
         "name_group_id": 1,
         "name_group_label": "あ"
-      },
-      {
-        "country_id": 3,
-        "name": "nihon",
-        "name_label": "日本",
-        "name_group_id": 5,
-        "name_group_label": "な"
       }
     ],
     "en": [
+      {
+        "country_id": 0,
+        "name": "japan",
+        "name_label": "Japan",
+        "name_group_id": 14,
+        "name_group_label": "J"
+      },
       {
         "country_id": 1,
         "name": "america",
@@ -37,18 +44,16 @@
         "name_label": "Itaria",
         "name_group_id": 9,
         "name_group_label": "I"
-      },
-      {
-        "country_id": 3,
-        "name": "japan",
-        "name_label": "Japan",
-        "name_group_id": 14,
-        "name_group_label": "J"
       }
     ]
   },
   "countries_detail": {
     "ja": [
+      {
+        "country_id": 0,
+        "overview": "日本概要",
+        "other": "日本備考"
+      },
       {
         "country_id": 1,
         "overview": "アメリカ概要",
@@ -58,14 +63,14 @@
         "country_id": 2,
         "overview": "イタリア概要",
         "other": "イタリア備考"
-      },
-      {
-        "country_id": 3,
-        "overview": "日本概要",
-        "other": "日本備考"
       }
     ],
     "en": [
+      {
+        "country_id": 0,
+        "overview": "Japan　overview",
+        "other": "Japan other"
+      },
       {
         "country_id": 1,
         "overview": "America　overview",
@@ -75,11 +80,6 @@
         "country_id": 2,
         "overview": "Itaria",
         "other": "Itaria other"
-      },
-      {
-        "country_id": 3,
-        "overview": "Japan　overview",
-        "other": "Japan other"
       }
     ]
   }
