@@ -5,13 +5,17 @@ from middleware import middleware
 from openapi import openapi_util
 from openapi import metadata
 import errors
+import config
 
 app = FastAPI(
   title = metadata.title,
   description = metadata.description,
   version = metadata.version,
   license_info = metadata.license_info,
-  openapi_tags = metadata.tags_metadata
+  openapi_tags = metadata.tags_metadata,
+  docs_url=config.SHOW_SWAGGER_PATH,
+  redoc_url=config.SHOW_REDOC_PATH,
+  openapi_url=config.SHOW_OPENAPI_PATH
 )
 
 # Wake up Event
