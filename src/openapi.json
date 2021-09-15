@@ -1,12 +1,20 @@
 {
   "openapi": "3.0.2",
   "info": {
-    "title": "FastAPI",
-    "version": "0.1.0"
+    "title": "World Dictionary REST API🌐",
+    "description": "\n💡World Dictionary can use Restful API !!\n",
+    "license": {
+      "name": "MIT License",
+      "url": "https://opensource.org/licenses/mit-license.php"
+    },
+    "version": "1.0.0"
   },
   "paths": {
     "/countries": {
       "get": {
+        "tags": [
+          "countries"
+        ],
         "summary": "Get Countries",
         "operationId": "get_countries_countries_get",
         "parameters": [
@@ -54,6 +62,9 @@
     },
     "/countries/{country_id}": {
       "get": {
+        "tags": [
+          "country"
+        ],
         "summary": "Get Country",
         "operationId": "get_country_countries__country_id__get",
         "parameters": [
@@ -106,6 +117,9 @@
     },
     "/countries_detail": {
       "get": {
+        "tags": [
+          "countries_detail"
+        ],
         "summary": "Get Countries Detail",
         "operationId": "get_countries_detail_countries_detail_get",
         "parameters": [
@@ -153,6 +167,9 @@
     },
     "/countries_detail/{country_id}": {
       "get": {
+        "tags": [
+          "country_detail"
+        ],
         "summary": "Get Country Detail",
         "operationId": "get_country_detail_countries_detail__country_id__get",
         "parameters": [
@@ -311,5 +328,23 @@
         "description": "An enumeration."
       }
     }
-  }
+  },
+  "tags": [
+    {
+      "name": "country",
+      "description": "using basic data for one country."
+    },
+    {
+      "name": "countries",
+      "description": "using all countries basic data."
+    },
+    {
+      "name": "country_detail",
+      "description": "using detail data for one country."
+    },
+    {
+      "name": "countries_detail",
+      "description": "using all countries detail data."
+    }
+  ]
 }

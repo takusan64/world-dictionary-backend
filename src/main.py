@@ -3,9 +3,16 @@ from fastapi import FastAPI, Request
 from api.api import router
 from middleware import middleware
 from openapi import openapi_util
+from openapi import metadata
 import errors
 
-app = FastAPI()
+app = FastAPI(
+  title = metadata.title,
+  description = metadata.description,
+  version = metadata.version,
+  license_info = metadata.license_info,
+  openapi_tags = metadata.tags_metadata
+)
 
 # Wake up Event
 @app.on_event("startup")
