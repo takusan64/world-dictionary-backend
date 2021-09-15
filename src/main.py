@@ -27,7 +27,7 @@ async def startup_event():
 @app.middleware("http")
 async def entry_point(request: Request, call_next):
   if not middleware.check_auth_token():
-    return errors.error_400()
+    return errors.error_401()
   response = await call_next(request)
   return response
 

@@ -4,6 +4,7 @@ import config
 from api import countries, countries_detail
 from openapi import response_example as res_exa
 from openapi import query_example as query_exa
+import errors
 
 router = APIRouter()
 def_lang = config.DEFAULT_LANGUAGE
@@ -13,6 +14,8 @@ def_lang = config.DEFAULT_LANGUAGE
 @router.get('/countries', response_model=List[res_exa.country], tags=["countries"])
 def get_countries(lang:query_exa.language_enum=def_lang):
   res = countries.get_countries(lang)
+  if not res:
+    return errors.error_400()
   return res
 
 # endpoint /countries/{country_id}
@@ -20,6 +23,8 @@ def get_countries(lang:query_exa.language_enum=def_lang):
 @router.get('/countries/{country_id}', response_model=res_exa.country, tags=["country"])
 def get_country(country_id:int, lang:query_exa.language_enum=def_lang):
   res = countries.get_country(country_id, lang)
+  if not res:
+    return errors.error_400()
   return res
 
 # endpoint /countries_detail
@@ -27,6 +32,8 @@ def get_country(country_id:int, lang:query_exa.language_enum=def_lang):
 @router.get('/countries_detail', response_model=List[res_exa.country_detail], tags=["countries_detail"])
 def get_countries_detail(lang:query_exa.language_enum=def_lang):
   res = countries_detail.get_countries_detail(lang)
+  if not res:
+    return errors.error_400()
   return res
 
 # endpoint /countries_detail/{country_id}
@@ -34,4 +41,6 @@ def get_countries_detail(lang:query_exa.language_enum=def_lang):
 @router.get('/countries_detail/{country_id}', response_model=res_exa.country_detail, tags=["country_detail"])
 def get_country_detail(country_id:int, lang:query_exa.language_enum=def_lang):
   res = countries_detail.get_country_detail(country_id, lang)
+  if not res:
+    return errors.error_400()
   return res
