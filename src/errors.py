@@ -1,13 +1,49 @@
-from fastapi.responses import JSONResponse
+from typing import Union
 
-def error_400():
-  print("400: Bad Request error.")
-  return JSONResponse(status_code=400, content="Bad Request")
+class ApiError(Exception):
+  status_code: int = 400
+  detail: str = 'API error'
+  openapi_response: dict[str, Union[int, str]]
 
-def error_401():
-  print("401: Authentication error.")
-  return JSONResponse(status_code=401, content="Unauthorized")
+class error_400(ApiError):
+  status_code = 400
+  detail = "Bad Request"
+  openapi_response = {
+    status_code: {
+      "description": detail,
+      "content": {
+        "text/plain": {
+          "example": detail
+        }
+      }
+    }
+  }
 
-def error_404():
-  print("404: Not Found error.")
-  return JSONResponse(status_code=404, content="Not Found")
+class error_401(ApiError):
+  status_code = 401
+  detail = "Unauthorized"
+  openapi_response = {
+    status_code: {
+      "description": detail,
+      "content": {
+        "text/plain": {
+          "example": detail
+        }
+      }
+    }
+  }
+
+class error_404(ApiError):
+  status_code = 404
+  detail = "Not Found"
+  openapi_response = {
+    status_code: {
+      "description": detail,
+      "content": {
+        "text/plain": {
+          "example": detail
+        }
+      }
+    }
+  }
+

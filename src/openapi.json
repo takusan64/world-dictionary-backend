@@ -47,6 +47,14 @@
               }
             }
           },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "example": "Bad Request"
+              }
+            }
+          },
           "422": {
             "description": "Validation Error",
             "content": {
@@ -102,6 +110,14 @@
               }
             }
           },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "example": "Bad Request"
+              }
+            }
+          },
           "422": {
             "description": "Validation Error",
             "content": {
@@ -149,6 +165,14 @@
                     "$ref": "#/components/schemas/country_detail"
                   }
                 }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "example": "Bad Request"
               }
             }
           },
@@ -204,6 +228,14 @@
                 "schema": {
                   "$ref": "#/components/schemas/country_detail"
                 }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "example": "Bad Request"
               }
             }
           },

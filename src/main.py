@@ -1,10 +1,10 @@
 from os import read
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, HTTPException
 from api.api import router
 from middleware import middleware
 from openapi import openapi_util
 from openapi import metadata
-import errors
+from errors import error_401
 import config
 
 app = FastAPI(
@@ -27,7 +27,7 @@ async def startup_event():
 @app.middleware("http")
 async def entry_point(request: Request, call_next):
   if not middleware.check_auth_token():
-    return errors.error_401()
+    raise HTTPException(status_code=error_401.status_code, detail=error_401.detail)
   response = await call_next(request)
   return response
 
