@@ -1,4 +1,3 @@
-from os import read
 from fastapi import FastAPI, Request, HTTPException
 from api.api import router
 from middleware import middleware
@@ -6,6 +5,15 @@ from openapi import openapi_util
 from openapi import metadata
 from errors import error_401
 import config
+from database.database_util import DataBase_Util
+
+db_util = DataBase_Util(
+  host = config.DB_HOST,
+  port = config.DB_PORT,
+  user = config.DB_USER,
+  password = config.DB_PASSWORD,
+  database = config.DATABASE
+)
 
 app = FastAPI(
   title = metadata.title,
@@ -21,7 +29,12 @@ app = FastAPI(
 # Wake up Event
 @app.on_event("startup")
 async def startup_event():
-  openapi_util.create_openapi_jsonfile(app)
+  try:
+    openapi_util.create_openapi_jsonfile(app)
+    db_util.connect_check()
+  except Exception:
+    print("Application startup is not completed.")
+    raise
 
 # request entry point
 @app.middleware("http")

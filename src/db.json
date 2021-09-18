@@ -3,21 +3,24 @@
     "ja": [
       {
         "country_id": 0,
-        "name": "nihon",
+        "country_code":"JP",
+        "name": "にほん",
         "name_label": "日本",
         "name_group_id": 5,
         "name_group_label": "な"
       },
       {
         "country_id": 1,
-        "name": "america",
+        "country_code":"US",
+        "name": "あめりか",
         "name_label": "アメリカ",
         "name_group_id": 1,
         "name_group_label": "あ"
       },
       {
         "country_id": 2,
-        "name": "itaria",
+        "country_code":"IT",
+        "name": "いたりあ",
         "name_label": "イタリア",
         "name_group_id": 1,
         "name_group_label": "あ"
@@ -26,6 +29,7 @@
     "en": [
       {
         "country_id": 0,
+        "country_code":"JP",
         "name": "japan",
         "name_label": "Japan",
         "name_group_id": 14,
@@ -33,6 +37,7 @@
       },
       {
         "country_id": 1,
+        "country_code":"US",
         "name": "america",
         "name_label": "America",
         "name_group_id": 1,
@@ -40,6 +45,7 @@
       },
       {
         "country_id": 2,
+        "country_code":"IT",
         "name": "italia",
         "name_label": "Itaria",
         "name_group_id": 9,
