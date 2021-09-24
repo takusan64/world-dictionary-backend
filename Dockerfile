@@ -3,7 +3,8 @@ USER root
 
 RUN apt-get update
 RUN apt-get -y install locales && \
-    localedef -f UTF-8 -i ja_JP ja_JP.UTF-8
+    localedef -f UTF-8 -i ja_JP ja_JP.UTF-8 && \
+    apt-get install -y postgresql-client
 
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:ja

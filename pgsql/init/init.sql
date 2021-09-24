@@ -1,7 +1,12 @@
-create table users
+create table countries
 (
-  user_id text UNIQUE,
-  password text,
-  insert_date timestamp with time zone,
-  update_date timestamp with time zone
+  country_id serial primary key,
+  country_code varchar not null,
+  name_label varchar not null
 );
+
+insert into countries(country_code, name_label) values
+  ('JP', '日本'),
+  ('US', 'アメリカ'),
+  ('IT', 'イタリア')
+;
