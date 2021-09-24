@@ -23,7 +23,7 @@
             "schema": {
               "allOf": [
                 {
-                  "$ref": "#/components/schemas/language_enum"
+                  "$ref": "#/components/schemas/Language_Enum"
                 }
               ],
               "default": "ja"
@@ -41,7 +41,7 @@
                   "title": "Response Get Countries Countries Get",
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/country"
+                    "$ref": "#/components/schemas/Country"
                   }
                 }
               }
@@ -90,7 +90,7 @@
             "schema": {
               "allOf": [
                 {
-                  "$ref": "#/components/schemas/language_enum"
+                  "$ref": "#/components/schemas/Language_Enum"
                 }
               ],
               "default": "ja"
@@ -105,7 +105,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/country"
+                  "$ref": "#/components/schemas/Country"
                 }
               }
             }
@@ -144,7 +144,7 @@
             "schema": {
               "allOf": [
                 {
-                  "$ref": "#/components/schemas/language_enum"
+                  "$ref": "#/components/schemas/Language_Enum"
                 }
               ],
               "default": "ja"
@@ -162,7 +162,7 @@
                   "title": "Response Get Countries Detail Countries Detail Get",
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/country_detail"
+                    "$ref": "#/components/schemas/Country_Detail"
                   }
                 }
               }
@@ -211,7 +211,7 @@
             "schema": {
               "allOf": [
                 {
-                  "$ref": "#/components/schemas/language_enum"
+                  "$ref": "#/components/schemas/Language_Enum"
                 }
               ],
               "default": "ja"
@@ -226,7 +226,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/country_detail"
+                  "$ref": "#/components/schemas/Country_Detail"
                 }
               }
             }
@@ -255,6 +255,67 @@
   },
   "components": {
     "schemas": {
+      "Country": {
+        "title": "Country",
+        "required": [
+          "country_id",
+          "country_code",
+          "name",
+          "name_label",
+          "name_group_id",
+          "name_group_label"
+        ],
+        "type": "object",
+        "properties": {
+          "country_id": {
+            "title": "Country Id",
+            "type": "integer"
+          },
+          "country_code": {
+            "title": "Country Code",
+            "type": "string"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "name_label": {
+            "title": "Name Label",
+            "type": "string"
+          },
+          "name_group_id": {
+            "title": "Name Group Id",
+            "type": "integer"
+          },
+          "name_group_label": {
+            "title": "Name Group Label",
+            "type": "string"
+          }
+        }
+      },
+      "Country_Detail": {
+        "title": "Country_Detail",
+        "required": [
+          "country_id",
+          "overview",
+          "other"
+        ],
+        "type": "object",
+        "properties": {
+          "country_id": {
+            "title": "Country Id",
+            "type": "integer"
+          },
+          "overview": {
+            "title": "Overview",
+            "type": "string"
+          },
+          "other": {
+            "title": "Other",
+            "type": "string"
+          }
+        }
+      },
       "HTTPValidationError": {
         "title": "HTTPValidationError",
         "type": "object",
@@ -267,6 +328,15 @@
             }
           }
         }
+      },
+      "Language_Enum": {
+        "title": "Language_Enum",
+        "enum": [
+          "ja",
+          "en"
+        ],
+        "type": "string",
+        "description": "An enumeration."
       },
       "ValidationError": {
         "title": "ValidationError",
@@ -293,71 +363,6 @@
             "type": "string"
           }
         }
-      },
-      "country": {
-        "title": "country",
-        "required": [
-          "country_id",
-          "name",
-          "name_label",
-          "name_group_id",
-          "name_group_label"
-        ],
-        "type": "object",
-        "properties": {
-          "country_id": {
-            "title": "Country Id",
-            "type": "integer"
-          },
-          "name": {
-            "title": "Name",
-            "type": "string"
-          },
-          "name_label": {
-            "title": "Name Label",
-            "type": "string"
-          },
-          "name_group_id": {
-            "title": "Name Group Id",
-            "type": "integer"
-          },
-          "name_group_label": {
-            "title": "Name Group Label",
-            "type": "string"
-          }
-        }
-      },
-      "country_detail": {
-        "title": "country_detail",
-        "required": [
-          "country_id",
-          "overview",
-          "other"
-        ],
-        "type": "object",
-        "properties": {
-          "country_id": {
-            "title": "Country Id",
-            "type": "integer"
-          },
-          "overview": {
-            "title": "Overview",
-            "type": "string"
-          },
-          "other": {
-            "title": "Other",
-            "type": "string"
-          }
-        }
-      },
-      "language_enum": {
-        "title": "language_enum",
-        "enum": [
-          "ja",
-          "en"
-        ],
-        "type": "string",
-        "description": "An enumeration."
       }
     }
   },

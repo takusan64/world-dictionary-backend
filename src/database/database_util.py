@@ -1,21 +1,18 @@
-from database.database import DataBase
+import psycopg2
+import psycopg2.extras
+from database.database import DB_Base
 
-class DataBase_Util(object):
-  def __init__(self, host, port, user, password, database):
-    self.db = DataBase(
-      host=host,
-      port=port,
-      user=user,
-      password=password,
-      database=database
-    )
-
+class DataBase_Util(DB_Base):
   def connect_check(self):
-    sql="SELECT version();"
     try:
-      result = self.db.fetchall(sql)
-      print(result)
-      print("Connected DB")
-    except Exception:
+      with self.create_connection() as connection:
+        with connection.cursor() as cursor:
+          sql="SELECT version();"
+          cursor.execute(sql)
+          result = cursor.fetchall()
+          print(result)
+          print("Connected DB")
+    except Exception as e:
       print("Can't connected DB")
+      print(e.args)
       raise
