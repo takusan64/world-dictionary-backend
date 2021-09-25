@@ -2,7 +2,7 @@ import psycopg2
 import psycopg2.extras
 from database.database import DB_Base
 
-class DataBase_Details(DB_Base):
+class DataBase_Countries_Detail(DB_Base):
   def connect_check(self):
     try:
       with self.create_connection() as connection:
