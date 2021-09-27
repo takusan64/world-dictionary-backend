@@ -36,3 +36,13 @@ services:
       - POSTGRES_PASSWORD
       - POSTGRES_USER
       - POSTGRES_DB
+
+  doc:
+    image: node:16.10.0-alpine
+    working_dir: /app
+    volumes:
+      - ./doc:/app
+    command: sh -c "yarn start"
+    ports:
+      - "3000:3000"
+    stdin_open: true
