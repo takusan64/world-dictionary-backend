@@ -6,7 +6,7 @@ services:
     build: .
     ports:
       - 80:8000
-    working_dir: /root/src
+    working_dir: /root/backend
     tty: true
     environment:
       - DB_HOST
@@ -15,7 +15,7 @@ services:
       - DB_USER
       - DB_PASSWORD
     volumes:
-      - ./src:/root/src
+      - ./backend:/root/backend
     command:
       - "/bin/sh"
       - "-c"
