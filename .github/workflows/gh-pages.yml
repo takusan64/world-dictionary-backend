@@ -3,6 +3,8 @@ name: Deploy RESTAPI Doc
 on:
   push:
     branches: [ develop ]
+    paths:
+      - 'doc/**'
 
 jobs:
   build:
