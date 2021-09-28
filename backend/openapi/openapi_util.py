@@ -7,5 +7,5 @@ def create_openapi_jsonfile(app):
       json.dump(openapi_data, f, ensure_ascii=False, indent=2)
     print("Created OpenAPI JSON File")
   except Exception:
-    print("Created OpenAPI Error")
+    print("Can't Create OpenAPI")
     raise
