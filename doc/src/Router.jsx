@@ -9,7 +9,7 @@ const Router = () => {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={PageA} />
-          <Route exact path="/pageb" component={PageB} />
+          <Route path="/pageb" component={PageB} />
         </Switch>
       </BrowserRouter>
     </>
