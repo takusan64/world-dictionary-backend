@@ -19,7 +19,7 @@ jobs:
           node-version: 16
 
       - name: Install NPM packages & Build
-        run: cd doc && npm ci && npm run build
+        run: cd doc && npm ci && npm run build && npm run postbuild
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
