@@ -6,7 +6,7 @@ import PageB from './PageB'
 const Router = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={PageA} />
           <Route exact path="/pageb" component={PageB} />
