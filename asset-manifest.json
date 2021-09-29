@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/world-dictionary-backend/static/js/main.ea949458.chunk.js",
-    "main.js.map": "/world-dictionary-backend/static/js/main.ea949458.chunk.js.map",
+    "main.js": "/world-dictionary-backend/static/js/main.e1d498c8.chunk.js",
+    "main.js.map": "/world-dictionary-backend/static/js/main.e1d498c8.chunk.js.map",
     "runtime-main.js": "/world-dictionary-backend/static/js/runtime-main.ec5d18fe.js",
     "runtime-main.js.map": "/world-dictionary-backend/static/js/runtime-main.ec5d18fe.js.map",
     "static/js/2.970ed7c4.chunk.js": "/world-dictionary-backend/static/js/2.970ed7c4.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.ec5d18fe.js",
     "static/js/2.970ed7c4.chunk.js",
-    "static/js/main.ea949458.chunk.js"
+    "static/js/main.e1d498c8.chunk.js"
   ]
 }
