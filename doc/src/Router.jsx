@@ -1,18 +1,35 @@
 import React from 'react'
 import { HashRouter, Route, Switch } from "react-router-dom"
-import PageA from './PageA'
-import PageB from './PageB'
-import Error from './Error'
+import { Container } from '@material-ui/core'
+import { makeStyles , createStyles} from '@material-ui/styles'
+import ERM from './pages/ERM'
+import ApiDoc from './pages/ApiDoc'
+import Error from './pages/Error'
+import TopBar from './components/TopBar'
+
+const useStyles = makeStyles((theme)  =>
+  createStyles({
+    container: {
+      marginTop: theme.spacing(2),
+      marginBottom: theme.spacing(2)
+    }
+  }
+))
 
 const Router = () => {
+  const classes = useStyles()
+
   return (
     <>
       <HashRouter>
-        <Switch>
-          <Route exact path="/" component={PageA} />
-          <Route path="/pageb" component={PageB} />
-          <Route component={Error} />
-        </Switch>
+        <TopBar />
+        <Container className={classes.container} maxWidth="lg">
+          <Switch>
+            <Route exact path="/" component={ApiDoc} />
+            <Route path="/erm" component={ERM} />
+            <Route component={Error} />
+          </Switch>
+        </Container>
       </HashRouter>
     </>
   )
