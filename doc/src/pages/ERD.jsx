@@ -1,12 +1,12 @@
 import React from 'react'
 
-const ERM = () => {
+const ERD = () => {
 
   return (
     <>
-      <p>ERM図</p>
+      <p>ER図</p>
     </>
   )
 }
 
-export default ERM
+export default ERD

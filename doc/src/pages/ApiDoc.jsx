@@ -1,10 +1,16 @@
 import React from 'react'
+import { RedocStandalone } from 'redoc';
 
 const ApiDoc = () => {
 
   return (
     <>
-      <p>API Doc</p>
+      <RedocStandalone
+        specUrl={`${process.env.PUBLIC_URL}/openapi.json`}
+        options={{
+          nativeScrollbars: true
+        }}
+      />
     </>
   )
 }

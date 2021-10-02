@@ -16,6 +16,7 @@ services:
       - DB_PASSWORD
     volumes:
       - ./backend:/root/backend
+      - ./doc/public:/doc/public
     command:
       - "/bin/sh"
       - "-c"

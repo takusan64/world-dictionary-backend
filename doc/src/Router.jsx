@@ -2,7 +2,7 @@ import React from 'react'
 import { HashRouter, Route, Switch } from "react-router-dom"
 import { Container } from '@material-ui/core'
 import { makeStyles , createStyles} from '@material-ui/styles'
-import ERM from './pages/ERM'
+import ERD from './pages/ERD'
 import ApiDoc from './pages/ApiDoc'
 import Error from './pages/Error'
 import TopBar from './components/TopBar'
@@ -23,10 +23,10 @@ const Router = () => {
     <>
       <HashRouter>
         <TopBar />
-        <Container className={classes.container} maxWidth="lg">
+        <Container className={classes.container} maxWidth="xl">
           <Switch>
             <Route exact path="/" component={ApiDoc} />
-            <Route path="/erm" component={ERM} />
+            <Route path="/erd" component={ERD} />
             <Route component={Error} />
           </Switch>
         </Container>
