@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/world-dictionary-backend/static/js/main.b40ebd11.chunk.js",
-    "main.js.map": "/world-dictionary-backend/static/js/main.b40ebd11.chunk.js.map",
+    "main.js": "/world-dictionary-backend/static/js/main.c058331d.chunk.js",
+    "main.js.map": "/world-dictionary-backend/static/js/main.c058331d.chunk.js.map",
     "runtime-main.js": "/world-dictionary-backend/static/js/runtime-main.ec5d18fe.js",
     "runtime-main.js.map": "/world-dictionary-backend/static/js/runtime-main.ec5d18fe.js.map",
-    "static/js/2.700a5459.chunk.js": "/world-dictionary-backend/static/js/2.700a5459.chunk.js",
-    "static/js/2.700a5459.chunk.js.map": "/world-dictionary-backend/static/js/2.700a5459.chunk.js.map",
+    "static/js/2.8a3ec401.chunk.js": "/world-dictionary-backend/static/js/2.8a3ec401.chunk.js",
+    "static/js/2.8a3ec401.chunk.js.map": "/world-dictionary-backend/static/js/2.8a3ec401.chunk.js.map",
     "index.html": "/world-dictionary-backend/index.html",
-    "static/js/2.700a5459.chunk.js.LICENSE.txt": "/world-dictionary-backend/static/js/2.700a5459.chunk.js.LICENSE.txt"
+    "static/js/2.8a3ec401.chunk.js.LICENSE.txt": "/world-dictionary-backend/static/js/2.8a3ec401.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ec5d18fe.js",
-    "static/js/2.700a5459.chunk.js",
-    "static/js/main.b40ebd11.chunk.js"
+    "static/js/2.8a3ec401.chunk.js",
+    "static/js/main.c058331d.chunk.js"
   ]
 }
