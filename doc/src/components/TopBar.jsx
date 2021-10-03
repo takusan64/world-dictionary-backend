@@ -6,11 +6,17 @@ import {
   Slide,
   useScrollTrigger
 } from '@material-ui/core'
+import PublicIcon from '@material-ui/icons/Public'
 import { makeStyles, createStyles } from '@material-ui/styles'
 import { Link } from "react-router-dom"
 
 const useStyles = makeStyles((theme) =>
   createStyles({
+    title: {
+      border: 0,
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(4)
+    },
     button: {
       '& > *': {
         padding: theme.spacing(1),
@@ -36,17 +42,24 @@ const TopBar = () => {
   return (
     <>
       <Slide direction="down" in={!trigger}>
-        <AppBar position="sticky" className={classes.appbar}>
+        <AppBar position="sticky">
           <Toolbar>
+            <PublicIcon />
+            <img
+              src={`${process.env.PUBLIC_URL}/title.png`}
+              height={30}
+              className={classes.title}
+              alt="title"
+            />
             {contents.map((content, i) =>
               <Button
                 key={i}
                 color="inherit"
                 className={classes.button}
+                component={Link}
+                to={content.path}
               >
-                <Link to={content.path}>
-                  {content.name}
-                </Link>
+                {content.name}
               </Button>
             )}
           </Toolbar>

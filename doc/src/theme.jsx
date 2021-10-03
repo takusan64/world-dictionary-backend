@@ -22,6 +22,10 @@ const theme = createTheme({
     button: {
         textTransform: "none"
     },
+    fontFamily: [
+      'Noto Sans Mono',
+      'sans-serif',
+    ].join(','),
     fontSize: 16
   },
   overrides: {
