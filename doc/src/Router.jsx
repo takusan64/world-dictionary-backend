@@ -10,8 +10,7 @@ import TopBar from './components/TopBar'
 const useStyles = makeStyles((theme)  =>
   createStyles({
     container: {
-      marginTop: theme.spacing(2),
-      marginBottom: theme.spacing(2)
+      marginTop: theme.spacing(1)
     }
   }
 ))

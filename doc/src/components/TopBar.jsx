@@ -6,7 +6,6 @@ import {
   Slide,
   useScrollTrigger
 } from '@material-ui/core'
-import PublicIcon from '@material-ui/icons/Public'
 import { makeStyles, createStyles } from '@material-ui/styles'
 import { Link } from "react-router-dom"
 
@@ -15,7 +14,7 @@ const useStyles = makeStyles((theme) =>
     title: {
       border: 0,
       marginLeft: theme.spacing(1),
-      marginRight: theme.spacing(4)
+      marginRight: theme.spacing(6)
     },
     button: {
       '& > *': {
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) =>
   ))
 
 const TopBar = () => {
-  const trigger = useScrollTrigger()
+  const trigger = useScrollTrigger({threshold:1})
   const classes = useStyles()
   const contents = [
     {
@@ -44,10 +43,9 @@ const TopBar = () => {
       <Slide direction="down" in={!trigger}>
         <AppBar position="sticky">
           <Toolbar>
-            <PublicIcon />
             <img
               src={`${process.env.PUBLIC_URL}/title.png`}
-              height={30}
+              height={40}
               className={classes.title}
               alt="title"
             />
