@@ -4,6 +4,7 @@ import {
   Toolbar,
   Button,
   Slide,
+  useMediaQuery,
   useScrollTrigger
 } from '@material-ui/core'
 import { makeStyles, createStyles } from '@material-ui/styles'
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme) =>
   ))
 
 const TopBar = () => {
+  const matches = useMediaQuery('(min-width:600px)');
   const trigger = useScrollTrigger({threshold:1})
   const classes = useStyles()
   const contents = [
@@ -44,7 +46,7 @@ const TopBar = () => {
         <AppBar position="sticky">
           <Toolbar>
             <img
-              src={`${process.env.PUBLIC_URL}/title.png`}
+              src={matches?`${process.env.PUBLIC_URL}/title.png`:`${process.env.PUBLIC_URL}/title_icon.png`}
               height={40}
               className={classes.title}
               alt="title"
