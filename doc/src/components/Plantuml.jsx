@@ -25,7 +25,7 @@ const Plantuml = () => {
             contentStyleType="text/css"
             height="343px"
             preserveAspectRatio="none"
-            style={{ width: 484, height: 343, background: "#FFFFFF" }}
+            style={{ width: "100%",maxWidth: 600, height: "auto", background: "#FFFFFF" }}
             version="1.1"
             viewBox="0 0 484 343"
             width="484px"
@@ -1109,7 +1109,7 @@ Country: JP
             contentStyleType="text/css"
             height="343px"
             preserveAspectRatio="none"
-            style={{ width: 484, height: 343, background: "#FFFFFF" }}
+            style={{ width: "100%",maxWidth: 600, height:"auto", background: "#FFFFFF" }}
             version="1.1"
             viewBox="0 0 484 343"
             width="484px"
