@@ -13,9 +13,15 @@ const Plantuml = () => {
         }}
       />
       <div className="mume markdown-preview  ">
-        <p>
+        <style
+          dangerouslySetInnerHTML={{
+            __html:
+              "/* Please visit the URL below for more information: */\n/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */\n.markdown-preview.markdown-preview svg {\n  width: 100% !important;\n  max-width: 600px !important;\n  height: auto !important;\n}\n"
+          }}
+        />
+        <h4 className="mume-header" id="ja-lang-table">
           [<strong>JA Lang Table</strong>]
-        </p>
+        </h4>
         <p>
           {/*?xml version="1.0" encoding="UTF-8" standalone="no"?*/}
           <svg
@@ -25,7 +31,7 @@ const Plantuml = () => {
             contentStyleType="text/css"
             height="343px"
             preserveAspectRatio="none"
-            style={{ width: "100%",maxWidth: 600, height: "auto", background: "#FFFFFF" }}
+            style={{ width: 484, height: 343, background: "#FFFFFF" }}
             version="1.1"
             viewBox="0 0 484 343"
             width="484px"
@@ -1097,9 +1103,9 @@ Country: JP
             </g>
           </svg>
         </p>
-        <p>
+        <h4 className="mume-header" id="en-lang-table">
           [<strong>EN Lang Table</strong>]
-        </p>
+        </h4>
         <p>
           {/*?xml version="1.0" encoding="UTF-8" standalone="no"?*/}
           <svg
@@ -1109,7 +1115,7 @@ Country: JP
             contentStyleType="text/css"
             height="343px"
             preserveAspectRatio="none"
-            style={{ width: "100%",maxWidth: 600, height:"auto", background: "#FFFFFF" }}
+            style={{ width: 484, height: 343, background: "#FFFFFF" }}
             version="1.1"
             viewBox="0 0 484 343"
             width="484px"

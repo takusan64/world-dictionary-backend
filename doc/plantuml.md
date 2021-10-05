@@ -1,3 +1,5 @@
+@import "./style.less"
+
 <!---
 To use the UML,  you need to
 - Java(https://java.com/ja/)
@@ -10,7 +12,7 @@ HTML created with Markdown Preview Enhanced can be converted to JSX at this site
 (https://transform.tools/html-to-jsx)
 -->
 
-[**JA Lang Table**]
+#### [**JA Lang Table**]
 ```plantuml
 @startuml
 
@@ -64,7 +66,7 @@ e01_ja }o..|| e03_ja
 @enduml
 ```
 
-[**EN Lang Table**]
+#### [**EN Lang Table**]
 ```plantuml
 @startuml
 
