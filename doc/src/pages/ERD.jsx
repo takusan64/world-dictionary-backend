@@ -1,10 +1,11 @@
 import React from 'react'
+import Plantuml from '../components/Plantuml'
 
 const ERD = () => {
 
   return (
     <>
-      <p>ER図</p>
+      <Plantuml />
     </>
   )
 }

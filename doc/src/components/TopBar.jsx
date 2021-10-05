@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) =>
       }
     }
   }
-  ))
+))
 
 const TopBar = () => {
   const matches = useMediaQuery('(min-width:600px)');

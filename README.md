@@ -1,23 +1,20 @@
 # world-dictionary-backend
 「世界辞書」のバックエンドサーバー &amp; DBサーバー
 
-## init setting
-```sh
-# /world-dictionary-backend/.env
-POSTGRES_PASSWORD=postgres
-POSTGRES_USER=postgres
-POSTGRES_DB=postgres
-```
-
 ## Easy Start Command
 This App uses Docker & Docker-Compose
 
-- start dev server
+- start api server
 ```sh
 # init
 docker-compose up --build
 # after that
 docker-compose up
+```
+
+- start doc server
+```sh
+docker-compose up doc
 ```
 
 ## My Task
