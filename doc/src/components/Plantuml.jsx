@@ -31,14 +31,14 @@ const Plantuml = () => {
             contentstyletype="text/css"
             height="343px"
             preserveAspectRatio="none"
-            style={{ width: 469, height: 343, background: "#FFFFFF" }}
+            style={{ width: 450, height: 343, background: "#FFFFFF" }}
             version="1.1"
-            viewBox="0 0 469 343"
-            width="469px"
+            viewBox="0 0 450 343"
+            width="450px"
             zoomAndPan="magnify"
           >
             <defs>
-              <filter height="300%" id="f18ug4c2qsbe2x" width="300%" x={-1} y={-1}>
+              <filter height="300%" id="fg5xrw5gqy4w9" width="300%" x={-1} y={-1}>
                 <feGaussianBlur result="blurOut" stdDeviation={2.0} />
                 <feColorMatrix
                   in="blurOut"
@@ -56,12 +56,12 @@ class e01_ja*/}
               <rect
                 codeline={8}
                 fill="#FEFECE"
-                filter="url(#f18ug4c2qsbe2x)"
+                filter="url(#fg5xrw5gqy4w9)"
                 height="137.9453"
                 id="e01_ja"
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
-                width={219}
-                x={95}
+                width={192}
+                x={103}
                 y={7}
               />
               <text
@@ -70,20 +70,20 @@ class e01_ja*/}
                 fontSize={12}
                 lengthAdjust="spacing"
                 textLength={61}
-                x={174}
+                x="168.5"
                 y="24.457"
               >
                 countris_ja
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
-                x1={96}
-                x2={313}
+                x1={104}
+                x2={294}
                 y1="32.0938"
                 y2="32.0938"
               />
               <ellipse
-                cx={106}
+                cx={114}
                 cy="43.0938"
                 rx={3}
                 ry={3}
@@ -95,7 +95,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={14}
-                x={115}
+                x={123}
                 y="47.5127"
               >
                 id :
@@ -107,7 +107,7 @@ class e01_ja*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={31}
-                x={132}
+                x={140}
                 y="47.5127"
               >
                 serial
@@ -118,15 +118,15 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={25}
-                x={166}
+                x={174}
                 y="47.5127"
               >
                 [ PK ]
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1={96}
-                x2={313}
+                x1={104}
+                x2={294}
                 y1="53.9297"
                 y2="53.9297"
               />
@@ -135,7 +135,7 @@ class e01_ja*/}
                 height={6}
                 style={{ stroke: "#C82930", strokeWidth: 1.0 }}
                 width={6}
-                x={103}
+                x={111}
                 y="61.9297"
               />
               <text
@@ -144,7 +144,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={91}
-                x={115}
+                x={123}
                 y="69.3486"
               >
                 country_group_id :
@@ -155,22 +155,22 @@ class e01_ja*/}
                 fontSize={11}
                 fontWeight="bold"
                 lengthAdjust="spacing"
-                textLength={31}
-                x={209}
+                textLength={44}
+                x={217}
                 y="69.3486"
               >
-                serial
+                smallint
               </text>
               <text
                 fill="#000000"
                 fontFamily="sans-serif"
                 fontSize={11}
                 lengthAdjust="spacing"
-                textLength={65}
-                x={243}
+                textLength={25}
+                x={264}
                 y="69.3486"
               >
-                [ FK, NN, UK ]
+                [ FK ]
               </text>
               <text
                 fill="#000000"
@@ -178,7 +178,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={30}
-                x={115}
+                x={123}
                 y="83.1846"
               >
                 code :
@@ -190,7 +190,7 @@ class e01_ja*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={55}
-                x={148}
+                x={156}
                 y="83.1846"
               >
                 varchar(2)
@@ -201,7 +201,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={46}
-                x={206}
+                x={214}
                 y="83.1846"
               >
                 [ NN, UK ]
@@ -212,7 +212,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={32}
-                x={115}
+                x={123}
                 y="97.0205"
               >
                 name :
@@ -224,7 +224,7 @@ class e01_ja*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={61}
-                x={150}
+                x={158}
                 y="97.0205"
               >
                 varchar(64)
@@ -235,7 +235,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x={214}
+                x={222}
                 y="97.0205"
               >
                 [ NN ]
@@ -246,7 +246,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={28}
-                x={115}
+                x={123}
                 y="110.8564"
               >
                 label :
@@ -258,7 +258,7 @@ class e01_ja*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={61}
-                x={146}
+                x={154}
                 y="110.8564"
               >
                 varchar(64)
@@ -269,7 +269,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x={210}
+                x={218}
                 y="110.8564"
               >
                 [ NN ]
@@ -280,7 +280,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={58}
-                x={115}
+                x={123}
                 y="124.6924"
               >
                 created_at :
@@ -292,7 +292,7 @@ class e01_ja*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={60}
-                x={176}
+                x={184}
                 y="124.6924"
               >
                 timestamp
@@ -303,7 +303,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x={239}
+                x={247}
                 y="124.6924"
               >
                 [ NN ]
@@ -314,7 +314,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={60}
-                x={115}
+                x={123}
                 y="138.5283"
               >
                 updated_at :
@@ -326,7 +326,7 @@ class e01_ja*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={60}
-                x={178}
+                x={186}
                 y="138.5283"
               >
                 timestamp
@@ -337,7 +337,7 @@ class e01_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x={241}
+                x={249}
                 y="138.5283"
               >
                 [ NN ]
@@ -347,11 +347,11 @@ class e02_ja*/}
               <rect
                 codeline={19}
                 fill="#FEFECE"
-                filter="url(#f18ug4c2qsbe2x)"
+                filter="url(#fg5xrw5gqy4w9)"
                 height="124.1094"
                 id="e02_ja"
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
-                width={185}
+                width={178}
                 x={7}
                 y={205}
               />
@@ -361,7 +361,7 @@ class e02_ja*/}
                 fontSize={12}
                 lengthAdjust="spacing"
                 textLength={100}
-                x="49.5"
+                x={46}
                 y="222.457"
               >
                 country_details_ja
@@ -369,7 +369,7 @@ class e02_ja*/}
               <line
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
                 x1={8}
-                x2={191}
+                x2={184}
                 y1="230.0938"
                 y2="230.0938"
               />
@@ -417,7 +417,7 @@ class e02_ja*/}
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
                 x1={8}
-                x2={191}
+                x2={184}
                 y1="251.9297"
                 y2="251.9297"
               />
@@ -446,22 +446,22 @@ class e02_ja*/}
                 fontSize={11}
                 fontWeight="bold"
                 lengthAdjust="spacing"
-                textLength={31}
+                textLength={44}
                 x={87}
                 y="267.3486"
               >
-                serial
+                smallint
               </text>
               <text
                 fill="#000000"
                 fontFamily="sans-serif"
                 fontSize={11}
                 lengthAdjust="spacing"
-                textLength={65}
-                x={121}
+                textLength={25}
+                x={134}
                 y="267.3486"
               >
-                [ FK, NN, UK ]
+                [ FK ]
               </text>
               <text
                 fill="#000000"
@@ -593,12 +593,12 @@ class e03_ja*/}
               <rect
                 codeline={29}
                 fill="#FEFECE"
-                filter="url(#f18ug4c2qsbe2x)"
+                filter="url(#fg5xrw5gqy4w9)"
                 height="96.4375"
                 id="e03_ja"
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
                 width={164}
-                x="227.5"
+                x={220}
                 y={219}
               />
               <text
@@ -607,20 +607,20 @@ class e03_ja*/}
                 fontSize={12}
                 lengthAdjust="spacing"
                 textLength={102}
-                x="258.5"
+                x={251}
                 y="236.457"
               >
                 country_groups_ja
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
-                x1="228.5"
-                x2="390.5"
+                x1={221}
+                x2={383}
                 y1="244.0938"
                 y2="244.0938"
               />
               <ellipse
-                cx="238.5"
+                cx={231}
                 cy="255.0938"
                 rx={3}
                 ry={3}
@@ -632,15 +632,15 @@ class e03_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={71}
-                x="247.5"
+                x={240}
                 y="259.5127"
               >
                 id : serial [ PK ]
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="228.5"
-                x2="390.5"
+                x1={221}
+                x2={383}
                 y1="265.9297"
                 y2="265.9297"
               />
@@ -650,7 +650,7 @@ class e03_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={28}
-                x="233.5"
+                x={226}
                 y="281.3486"
               >
                 label :
@@ -662,7 +662,7 @@ class e03_ja*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={55}
-                x="264.5"
+                x={257}
                 y="281.3486"
               >
                 varchar(2)
@@ -673,7 +673,7 @@ class e03_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={46}
-                x="322.5"
+                x={315}
                 y="281.3486"
               >
                 [ NN, UK ]
@@ -684,7 +684,7 @@ class e03_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={58}
-                x="233.5"
+                x={226}
                 y="295.1846"
               >
                 created_at :
@@ -696,7 +696,7 @@ class e03_ja*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={60}
-                x="294.5"
+                x={287}
                 y="295.1846"
               >
                 timestamp
@@ -707,7 +707,7 @@ class e03_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x="357.5"
+                x={350}
                 y="295.1846"
               >
                 [ NN ]
@@ -718,7 +718,7 @@ class e03_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={60}
-                x="233.5"
+                x={226}
                 y="309.0205"
               >
                 updated_at :
@@ -730,7 +730,7 @@ class e03_ja*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={60}
-                x="296.5"
+                x={289}
                 y="309.0205"
               >
                 timestamp
@@ -741,7 +741,7 @@ class e03_ja*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x="359.5"
+                x={352}
                 y="309.0205"
               >
                 [ NN ]
@@ -751,12 +751,12 @@ class term*/}
               <rect
                 codeline={37}
                 fill="#FEFECE"
-                filter="url(#f18ug4c2qsbe2x)"
+                filter="url(#fg5xrw5gqy4w9)"
                 height="112.4375"
                 id="term"
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
                 width={106}
-                x="349.5"
+                x={330}
                 y={20}
               />
               <text
@@ -765,20 +765,20 @@ class term*/}
                 fontSize={12}
                 lengthAdjust="spacing"
                 textLength={25}
-                x={390}
+                x="370.5"
                 y="37.457"
               >
                 term
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
-                x1="350.5"
-                x2="454.5"
+                x1={331}
+                x2={435}
                 y1="45.0938"
                 y2="45.0938"
               />
               <ellipse
-                cx="360.5"
+                cx={341}
                 cy="56.0938"
                 fill="#000000"
                 rx={3}
@@ -791,20 +791,20 @@ class term*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={80}
-                x="369.5"
+                x={350}
                 y="60.5127"
               >
                 PK : Primary Key
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="350.5"
-                x2="454.5"
+                x1={331}
+                x2={435}
                 y1="66.9297"
                 y2="66.9297"
               />
               <ellipse
-                cx="360.5"
+                cx={341}
                 cy="77.9297"
                 fill="#000000"
                 rx={3}
@@ -817,20 +817,20 @@ class term*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={78}
-                x="369.5"
+                x={350}
                 y="82.3486"
               >
                 FK : Forefin Key
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="350.5"
-                x2="454.5"
+                x1={331}
+                x2={435}
                 y1="88.7656"
                 y2="88.7656"
               />
               <ellipse
-                cx="360.5"
+                cx={341}
                 cy="99.7656"
                 fill="#000000"
                 rx={3}
@@ -843,20 +843,20 @@ class term*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={59}
-                x="369.5"
+                x={350}
                 y="104.1846"
               >
                 NN : Not Null
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="350.5"
-                x2="454.5"
+                x1={331}
+                x2={435}
                 y1="110.6016"
                 y2="110.6016"
               />
               <ellipse
-                cx="360.5"
+                cx={341}
                 cy="121.6016"
                 fill="#000000"
                 rx={3}
@@ -869,7 +869,7 @@ class term*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={78}
-                x="369.5"
+                x={350}
                 y="126.0205"
               >
                 UK : Unique Key
@@ -878,7 +878,7 @@ class term*/}
 link e01_ja to e02_ja*/}
               <path
                 codeline={47}
-                d="M143.5,152.23 C143.5,152.23 143.5,197.98 143.5,197.98 "
+                d="M144,152.23 C144,152.23 144,197.98 144,197.98 "
                 fill="none"
                 id="e01_ja-e02_ja"
                 style={{
@@ -889,43 +889,43 @@ link e01_ja to e02_ja*/}
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="147.5"
-                x2="139.5"
+                x1={148}
+                x2={140}
                 y1="200.98"
                 y2="200.98"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="147.5"
-                x2="139.5"
+                x1={148}
+                x2={140}
                 y1="197.98"
                 y2="197.98"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="143.5"
-                x2="143.5"
+                x1={144}
+                x2={144}
                 y1="196.98"
                 y2="204.98"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="139.5"
-                x2="147.5"
+                x1={140}
+                x2={148}
                 y1="149.23"
                 y2="149.23"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="139.5"
-                x2="147.5"
+                x1={140}
+                x2={148}
                 y1="152.23"
                 y2="152.23"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="143.5"
-                x2="143.5"
+                x1={144}
+                x2={144}
                 y1="153.23"
                 y2="145.23"
               />
@@ -933,7 +933,7 @@ link e01_ja to e02_ja*/}
 link e01_ja to e03_ja*/}
               <path
                 codeline={48}
-                d="M270.75,153.23 C270.75,153.23 270.75,210.92 270.75,210.92 "
+                d="M257.5,153.23 C257.5,153.23 257.5,210.92 257.5,210.92 "
                 fill="none"
                 id="e01_ja-e03_ja"
                 style={{
@@ -944,54 +944,54 @@ link e01_ja to e03_ja*/}
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="274.75"
-                x2="266.75"
+                x1="261.5"
+                x2="253.5"
                 y1="214.92"
                 y2="214.92"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="274.75"
-                x2="266.75"
+                x1="261.5"
+                x2="253.5"
                 y1="211.92"
                 y2="211.92"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="270.75"
-                x2="270.75"
+                x1="257.5"
+                x2="257.5"
                 y1="210.92"
                 y2="218.92"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="270.75"
-                x2="264.75"
+                x1="257.5"
+                x2="251.5"
                 y1="153.23"
                 y2="145.23"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="270.75"
-                x2="276.75"
+                x1="257.5"
+                x2="263.5"
                 y1="153.23"
                 y2="145.23"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="270.75"
-                x2="270.75"
+                x1="257.5"
+                x2="257.5"
                 y1="153.23"
                 y2="145.23"
               />
               <ellipse
-                cx="270.75"
+                cx="257.5"
                 cy="159.23"
                 rx={4}
                 ry={4}
                 style={{ stroke: "#A80036", strokeWidth: 1.0, fill: "none" }}
               />
-              {/*MD5=[982ef2f9c60ed0bfd769feaf23fb4589]
+              {/*MD5=[d741e247f4ae4dd48e85d990c5422c3b]
 @startuml
 
 ' hide the spot
@@ -1003,7 +1003,7 @@ skinparam linetype ortho
 entity "countris_ja" as e01_ja {
   +id : **serial** [ PK ]
   - -
-  -country_group_id : **serial** [ FK, NN, UK ]
+  -country_group_id : **smallint** [ FK ]
   code : **varchar(2)** [ NN, UK ]
   name : **varchar(64)** [ NN ]
   label : **varchar(64)** [ NN ]
@@ -1014,7 +1014,7 @@ entity "countris_ja" as e01_ja {
 entity "country_details_ja" as e02_ja {
   +id : **serial** [ PK ]
   - -
-  -country_id : **serial** [ FK, NN, UK ]
+  -country_id : **smallint** [ FK ]
   overview : **text** [ NN ]
   other : **text**
   created_at : **timestamp** [ NN ]
@@ -1052,7 +1052,7 @@ skinparam linetype ortho
 entity "countris_ja" as e01_ja {
   +id : **serial** [ PK ]
   - -
-  -country_group_id : **serial** [ FK, NN, UK ]
+  -country_group_id : **smallint** [ FK ]
   code : **varchar(2)** [ NN, UK ]
   name : **varchar(64)** [ NN ]
   label : **varchar(64)** [ NN ]
@@ -1063,7 +1063,7 @@ entity "countris_ja" as e01_ja {
 entity "country_details_ja" as e02_ja {
   +id : **serial** [ PK ]
   - -
-  -country_id : **serial** [ FK, NN, UK ]
+  -country_id : **smallint** [ FK ]
   overview : **text** [ NN ]
   other : **text**
   created_at : **timestamp** [ NN ]
@@ -1115,14 +1115,14 @@ Country: JP
             contentstyletype="text/css"
             height="343px"
             preserveAspectRatio="none"
-            style={{ width: 469, height: 343, background: "#FFFFFF" }}
+            style={{ width: 450, height: 343, background: "#FFFFFF" }}
             version="1.1"
-            viewBox="0 0 469 343"
-            width="469px"
+            viewBox="0 0 450 343"
+            width="450px"
             zoomAndPan="magnify"
           >
             <defs>
-              <filter height="300%" id="f179uwbr493qwf" width="300%" x={-1} y={-1}>
+              <filter height="300%" id="f1sghaocu3linj" width="300%" x={-1} y={-1}>
                 <feGaussianBlur result="blurOut" stdDeviation={2.0} />
                 <feColorMatrix
                   in="blurOut"
@@ -1140,12 +1140,12 @@ class e01_en*/}
               <rect
                 codeline={8}
                 fill="#FEFECE"
-                filter="url(#f179uwbr493qwf)"
+                filter="url(#f1sghaocu3linj)"
                 height="137.9453"
                 id="e01_en"
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
-                width={219}
-                x={95}
+                width={192}
+                x={103}
                 y={7}
               />
               <text
@@ -1154,20 +1154,20 @@ class e01_en*/}
                 fontSize={12}
                 lengthAdjust="spacing"
                 textLength={65}
-                x={172}
+                x="166.5"
                 y="24.457"
               >
                 countris_en
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
-                x1={96}
-                x2={313}
+                x1={104}
+                x2={294}
                 y1="32.0938"
                 y2="32.0938"
               />
               <ellipse
-                cx={106}
+                cx={114}
                 cy="43.0938"
                 rx={3}
                 ry={3}
@@ -1179,7 +1179,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={14}
-                x={115}
+                x={123}
                 y="47.5127"
               >
                 id :
@@ -1191,7 +1191,7 @@ class e01_en*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={31}
-                x={132}
+                x={140}
                 y="47.5127"
               >
                 serial
@@ -1202,15 +1202,15 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={25}
-                x={166}
+                x={174}
                 y="47.5127"
               >
                 [ PK ]
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1={96}
-                x2={313}
+                x1={104}
+                x2={294}
                 y1="53.9297"
                 y2="53.9297"
               />
@@ -1219,7 +1219,7 @@ class e01_en*/}
                 height={6}
                 style={{ stroke: "#C82930", strokeWidth: 1.0 }}
                 width={6}
-                x={103}
+                x={111}
                 y="61.9297"
               />
               <text
@@ -1228,7 +1228,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={91}
-                x={115}
+                x={123}
                 y="69.3486"
               >
                 country_group_id :
@@ -1239,22 +1239,22 @@ class e01_en*/}
                 fontSize={11}
                 fontWeight="bold"
                 lengthAdjust="spacing"
-                textLength={31}
-                x={209}
+                textLength={44}
+                x={217}
                 y="69.3486"
               >
-                serial
+                smallint
               </text>
               <text
                 fill="#000000"
                 fontFamily="sans-serif"
                 fontSize={11}
                 lengthAdjust="spacing"
-                textLength={65}
-                x={243}
+                textLength={25}
+                x={264}
                 y="69.3486"
               >
-                [ FK, NN, UK ]
+                [ FK ]
               </text>
               <text
                 fill="#000000"
@@ -1262,7 +1262,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={30}
-                x={115}
+                x={123}
                 y="83.1846"
               >
                 code :
@@ -1274,7 +1274,7 @@ class e01_en*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={55}
-                x={148}
+                x={156}
                 y="83.1846"
               >
                 varchar(2)
@@ -1285,7 +1285,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={46}
-                x={206}
+                x={214}
                 y="83.1846"
               >
                 [ NN, UK ]
@@ -1296,7 +1296,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={32}
-                x={115}
+                x={123}
                 y="97.0205"
               >
                 name :
@@ -1308,7 +1308,7 @@ class e01_en*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={61}
-                x={150}
+                x={158}
                 y="97.0205"
               >
                 varchar(64)
@@ -1319,7 +1319,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x={214}
+                x={222}
                 y="97.0205"
               >
                 [ NN ]
@@ -1330,7 +1330,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={28}
-                x={115}
+                x={123}
                 y="110.8564"
               >
                 label :
@@ -1342,7 +1342,7 @@ class e01_en*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={61}
-                x={146}
+                x={154}
                 y="110.8564"
               >
                 varchar(64)
@@ -1353,7 +1353,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x={210}
+                x={218}
                 y="110.8564"
               >
                 [ NN ]
@@ -1364,7 +1364,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={58}
-                x={115}
+                x={123}
                 y="124.6924"
               >
                 created_at :
@@ -1376,7 +1376,7 @@ class e01_en*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={60}
-                x={176}
+                x={184}
                 y="124.6924"
               >
                 timestamp
@@ -1387,7 +1387,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x={239}
+                x={247}
                 y="124.6924"
               >
                 [ NN ]
@@ -1398,7 +1398,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={60}
-                x={115}
+                x={123}
                 y="138.5283"
               >
                 updated_at :
@@ -1410,7 +1410,7 @@ class e01_en*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={60}
-                x={178}
+                x={186}
                 y="138.5283"
               >
                 timestamp
@@ -1421,7 +1421,7 @@ class e01_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x={241}
+                x={249}
                 y="138.5283"
               >
                 [ NN ]
@@ -1431,11 +1431,11 @@ class e02_en*/}
               <rect
                 codeline={19}
                 fill="#FEFECE"
-                filter="url(#f179uwbr493qwf)"
+                filter="url(#f1sghaocu3linj)"
                 height="124.1094"
                 id="e02_en"
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
-                width={185}
+                width={178}
                 x={7}
                 y={205}
               />
@@ -1445,7 +1445,7 @@ class e02_en*/}
                 fontSize={12}
                 lengthAdjust="spacing"
                 textLength={104}
-                x="47.5"
+                x={44}
                 y="222.457"
               >
                 country_details_en
@@ -1453,7 +1453,7 @@ class e02_en*/}
               <line
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
                 x1={8}
-                x2={191}
+                x2={184}
                 y1="230.0938"
                 y2="230.0938"
               />
@@ -1501,7 +1501,7 @@ class e02_en*/}
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
                 x1={8}
-                x2={191}
+                x2={184}
                 y1="251.9297"
                 y2="251.9297"
               />
@@ -1530,22 +1530,22 @@ class e02_en*/}
                 fontSize={11}
                 fontWeight="bold"
                 lengthAdjust="spacing"
-                textLength={31}
+                textLength={44}
                 x={87}
                 y="267.3486"
               >
-                serial
+                smallint
               </text>
               <text
                 fill="#000000"
                 fontFamily="sans-serif"
                 fontSize={11}
                 lengthAdjust="spacing"
-                textLength={65}
-                x={121}
+                textLength={25}
+                x={134}
                 y="267.3486"
               >
-                [ FK, NN, UK ]
+                [ FK ]
               </text>
               <text
                 fill="#000000"
@@ -1677,12 +1677,12 @@ class e03_en*/}
               <rect
                 codeline={29}
                 fill="#FEFECE"
-                filter="url(#f179uwbr493qwf)"
+                filter="url(#f1sghaocu3linj)"
                 height="96.4375"
                 id="e03_en"
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
                 width={164}
-                x="227.5"
+                x={220}
                 y={219}
               />
               <text
@@ -1691,20 +1691,20 @@ class e03_en*/}
                 fontSize={12}
                 lengthAdjust="spacing"
                 textLength={106}
-                x="256.5"
+                x={249}
                 y="236.457"
               >
                 country_groups_en
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
-                x1="228.5"
-                x2="390.5"
+                x1={221}
+                x2={383}
                 y1="244.0938"
                 y2="244.0938"
               />
               <ellipse
-                cx="238.5"
+                cx={231}
                 cy="255.0938"
                 rx={3}
                 ry={3}
@@ -1716,15 +1716,15 @@ class e03_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={71}
-                x="247.5"
+                x={240}
                 y="259.5127"
               >
                 id : serial [ PK ]
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="228.5"
-                x2="390.5"
+                x1={221}
+                x2={383}
                 y1="265.9297"
                 y2="265.9297"
               />
@@ -1734,7 +1734,7 @@ class e03_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={28}
-                x="233.5"
+                x={226}
                 y="281.3486"
               >
                 label :
@@ -1746,7 +1746,7 @@ class e03_en*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={55}
-                x="264.5"
+                x={257}
                 y="281.3486"
               >
                 varchar(2)
@@ -1757,7 +1757,7 @@ class e03_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={46}
-                x="322.5"
+                x={315}
                 y="281.3486"
               >
                 [ NN, UK ]
@@ -1768,7 +1768,7 @@ class e03_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={58}
-                x="233.5"
+                x={226}
                 y="295.1846"
               >
                 created_at :
@@ -1780,7 +1780,7 @@ class e03_en*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={60}
-                x="294.5"
+                x={287}
                 y="295.1846"
               >
                 timestamp
@@ -1791,7 +1791,7 @@ class e03_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x="357.5"
+                x={350}
                 y="295.1846"
               >
                 [ NN ]
@@ -1802,7 +1802,7 @@ class e03_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={60}
-                x="233.5"
+                x={226}
                 y="309.0205"
               >
                 updated_at :
@@ -1814,7 +1814,7 @@ class e03_en*/}
                 fontWeight="bold"
                 lengthAdjust="spacing"
                 textLength={60}
-                x="296.5"
+                x={289}
                 y="309.0205"
               >
                 timestamp
@@ -1825,7 +1825,7 @@ class e03_en*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={26}
-                x="359.5"
+                x={352}
                 y="309.0205"
               >
                 [ NN ]
@@ -1835,12 +1835,12 @@ class term*/}
               <rect
                 codeline={37}
                 fill="#FEFECE"
-                filter="url(#f179uwbr493qwf)"
+                filter="url(#f1sghaocu3linj)"
                 height="112.4375"
                 id="term"
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
                 width={106}
-                x="349.5"
+                x={330}
                 y={20}
               />
               <text
@@ -1849,20 +1849,20 @@ class term*/}
                 fontSize={12}
                 lengthAdjust="spacing"
                 textLength={25}
-                x={390}
+                x="370.5"
                 y="37.457"
               >
                 term
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: "1.5" }}
-                x1="350.5"
-                x2="454.5"
+                x1={331}
+                x2={435}
                 y1="45.0938"
                 y2="45.0938"
               />
               <ellipse
-                cx="360.5"
+                cx={341}
                 cy="56.0938"
                 fill="#000000"
                 rx={3}
@@ -1875,20 +1875,20 @@ class term*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={80}
-                x="369.5"
+                x={350}
                 y="60.5127"
               >
                 PK : Primary Key
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="350.5"
-                x2="454.5"
+                x1={331}
+                x2={435}
                 y1="66.9297"
                 y2="66.9297"
               />
               <ellipse
-                cx="360.5"
+                cx={341}
                 cy="77.9297"
                 fill="#000000"
                 rx={3}
@@ -1901,20 +1901,20 @@ class term*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={78}
-                x="369.5"
+                x={350}
                 y="82.3486"
               >
                 FK : Forefin Key
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="350.5"
-                x2="454.5"
+                x1={331}
+                x2={435}
                 y1="88.7656"
                 y2="88.7656"
               />
               <ellipse
-                cx="360.5"
+                cx={341}
                 cy="99.7656"
                 fill="#000000"
                 rx={3}
@@ -1927,20 +1927,20 @@ class term*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={59}
-                x="369.5"
+                x={350}
                 y="104.1846"
               >
                 NN : Not Null
               </text>
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="350.5"
-                x2="454.5"
+                x1={331}
+                x2={435}
                 y1="110.6016"
                 y2="110.6016"
               />
               <ellipse
-                cx="360.5"
+                cx={341}
                 cy="121.6016"
                 fill="#000000"
                 rx={3}
@@ -1953,7 +1953,7 @@ class term*/}
                 fontSize={11}
                 lengthAdjust="spacing"
                 textLength={78}
-                x="369.5"
+                x={350}
                 y="126.0205"
               >
                 UK : Unique Key
@@ -1962,7 +1962,7 @@ class term*/}
 link e01_en to e02_en*/}
               <path
                 codeline={47}
-                d="M143.5,152.23 C143.5,152.23 143.5,197.98 143.5,197.98 "
+                d="M144,152.23 C144,152.23 144,197.98 144,197.98 "
                 fill="none"
                 id="e01_en-e02_en"
                 style={{
@@ -1973,43 +1973,43 @@ link e01_en to e02_en*/}
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="147.5"
-                x2="139.5"
+                x1={148}
+                x2={140}
                 y1="200.98"
                 y2="200.98"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="147.5"
-                x2="139.5"
+                x1={148}
+                x2={140}
                 y1="197.98"
                 y2="197.98"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="143.5"
-                x2="143.5"
+                x1={144}
+                x2={144}
                 y1="196.98"
                 y2="204.98"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="139.5"
-                x2="147.5"
+                x1={140}
+                x2={148}
                 y1="149.23"
                 y2="149.23"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="139.5"
-                x2="147.5"
+                x1={140}
+                x2={148}
                 y1="152.23"
                 y2="152.23"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="143.5"
-                x2="143.5"
+                x1={144}
+                x2={144}
                 y1="153.23"
                 y2="145.23"
               />
@@ -2017,7 +2017,7 @@ link e01_en to e02_en*/}
 link e01_en to e03_en*/}
               <path
                 codeline={48}
-                d="M270.75,153.23 C270.75,153.23 270.75,210.92 270.75,210.92 "
+                d="M257.5,153.23 C257.5,153.23 257.5,210.92 257.5,210.92 "
                 fill="none"
                 id="e01_en-e03_en"
                 style={{
@@ -2028,54 +2028,54 @@ link e01_en to e03_en*/}
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="274.75"
-                x2="266.75"
+                x1="261.5"
+                x2="253.5"
                 y1="214.92"
                 y2="214.92"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="274.75"
-                x2="266.75"
+                x1="261.5"
+                x2="253.5"
                 y1="211.92"
                 y2="211.92"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="270.75"
-                x2="270.75"
+                x1="257.5"
+                x2="257.5"
                 y1="210.92"
                 y2="218.92"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="270.75"
-                x2="264.75"
+                x1="257.5"
+                x2="251.5"
                 y1="153.23"
                 y2="145.23"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="270.75"
-                x2="276.75"
+                x1="257.5"
+                x2="263.5"
                 y1="153.23"
                 y2="145.23"
               />
               <line
                 style={{ stroke: "#A80036", strokeWidth: 1.0 }}
-                x1="270.75"
-                x2="270.75"
+                x1="257.5"
+                x2="257.5"
                 y1="153.23"
                 y2="145.23"
               />
               <ellipse
-                cx="270.75"
+                cx="257.5"
                 cy="159.23"
                 rx={4}
                 ry={4}
                 style={{ stroke: "#A80036", strokeWidth: 1.0, fill: "none" }}
               />
-              {/*MD5=[ece7dbe2c33ef20265e1fb4b04802df1]
+              {/*MD5=[ab1aa41134de9b4a4606e5dbd1af588a]
 @startuml
 
 ' hide the spot
@@ -2087,7 +2087,7 @@ skinparam linetype ortho
 entity "countris_en" as e01_en {
   +id : **serial** [ PK ]
   - -
-  -country_group_id : **serial** [ FK, NN, UK ]
+  -country_group_id : **smallint** [ FK ]
   code : **varchar(2)** [ NN, UK ]
   name : **varchar(64)** [ NN ]
   label : **varchar(64)** [ NN ]
@@ -2098,7 +2098,7 @@ entity "countris_en" as e01_en {
 entity "country_details_en" as e02_en {
   +id : **serial** [ PK ]
   - -
-  -country_id : **serial** [ FK, NN, UK ]
+  -country_id : **smallint** [ FK ]
   overview : **text** [ NN ]
   other : **text**
   created_at : **timestamp** [ NN ]
@@ -2136,7 +2136,7 @@ skinparam linetype ortho
 entity "countris_en" as e01_en {
   +id : **serial** [ PK ]
   - -
-  -country_group_id : **serial** [ FK, NN, UK ]
+  -country_group_id : **smallint** [ FK ]
   code : **varchar(2)** [ NN, UK ]
   name : **varchar(64)** [ NN ]
   label : **varchar(64)** [ NN ]
@@ -2147,7 +2147,7 @@ entity "countris_en" as e01_en {
 entity "country_details_en" as e02_en {
   +id : **serial** [ PK ]
   - -
-  -country_id : **serial** [ FK, NN, UK ]
+  -country_id : **smallint** [ FK ]
   overview : **text** [ NN ]
   other : **text**
   created_at : **timestamp** [ NN ]
@@ -2189,7 +2189,6 @@ Country: JP
         </p>
       </div>
     </>
-
   )
 }
 

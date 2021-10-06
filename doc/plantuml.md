@@ -25,7 +25,7 @@ skinparam linetype ortho
 entity "countris_ja" as e01_ja {
   +id : **serial** [ PK ]
   --
-  -country_group_id : **serial** [ FK ]
+  -country_group_id : **smallint** [ FK ]
   code : **varchar(2)** [ NN, UK ]
   name : **varchar(64)** [ NN ]
   label : **varchar(64)** [ NN ]
@@ -36,7 +36,7 @@ entity "countris_ja" as e01_ja {
 entity "country_details_ja" as e02_ja {
   +id : **serial** [ PK ]
   --
-  -country_id : **serial** [ FK ]
+  -country_id : **smallint** [ FK ]
   overview : **text** [ NN ]
   other : **text**
   created_at : **timestamp** [ NN ]
@@ -79,7 +79,7 @@ skinparam linetype ortho
 entity "countris_en" as e01_en {
   +id : **serial** [ PK ]
   --
-  -country_group_id : **serial** [ FK ]
+  -country_group_id : **smallint** [ FK ]
   code : **varchar(2)** [ NN, UK ]
   name : **varchar(64)** [ NN ]
   label : **varchar(64)** [ NN ]
@@ -90,7 +90,7 @@ entity "countris_en" as e01_en {
 entity "country_details_en" as e02_en {
   +id : **serial** [ PK ]
   --
-  -country_id : **serial** [ FK ]
+  -country_id : **smallint** [ FK ]
   overview : **text** [ NN ]
   other : **text**
   created_at : **timestamp** [ NN ]

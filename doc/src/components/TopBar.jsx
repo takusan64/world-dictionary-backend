@@ -35,7 +35,7 @@ const TopBar = () => {
       path: "/"
     },
     {
-      name: "ERM",
+      name: "ERD",
       path: "/erd"
     }
   ]
