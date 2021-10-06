@@ -25,30 +25,30 @@ skinparam linetype ortho
 entity "countris_ja" as e01_ja {
   +id : **serial** [ PK ]
   --
-  -country_group_id : **serial** [ FK, NN, UK ]
+  -country_group_id : **serial** [ FK ]
   code : **varchar(2)** [ NN, UK ]
   name : **varchar(64)** [ NN ]
   label : **varchar(64)** [ NN ]
-  created_at : **timestamp** [ NN, UK ]
-  updated_at : **timestamp** [ NN, UK ]
+  created_at : **timestamp** [ NN ]
+  updated_at : **timestamp** [ NN ]
 }
 
 entity "country_details_ja" as e02_ja {
   +id : **serial** [ PK ]
   --
-  -country_id : **serial** [ FK, NN, UK ]
+  -country_id : **serial** [ FK ]
   overview : **text** [ NN ]
   other : **text**
-  created_at : **timestamp** [ NN, UK ]
-  updated_at : **timestamp** [ NN, UK ]
+  created_at : **timestamp** [ NN ]
+  updated_at : **timestamp** [ NN ]
 }
 
 entity "country_groups_ja" as e03_ja {
   +id : serial [ PK ]
   --
   label : **varchar(2)** [ NN, UK ]
-  created_at : **timestamp** [ NN, UK ]
-  updated_at : **timestamp** [ NN, UK ]
+  created_at : **timestamp** [ NN ]
+  updated_at : **timestamp** [ NN ]
 }
 
 entity "term" as term {
@@ -79,30 +79,30 @@ skinparam linetype ortho
 entity "countris_en" as e01_en {
   +id : **serial** [ PK ]
   --
-  -country_group_id : **serial** [ FK, NN, UK ]
+  -country_group_id : **serial** [ FK ]
   code : **varchar(2)** [ NN, UK ]
   name : **varchar(64)** [ NN ]
   label : **varchar(64)** [ NN ]
-  created_at : **timestamp** [ NN, UK ]
-  updated_at : **timestamp** [ NN, UK ]
+  created_at : **timestamp** [ NN ]
+  updated_at : **timestamp** [ NN ]
 }
 
 entity "country_details_en" as e02_en {
   +id : **serial** [ PK ]
   --
-  -country_id : **serial** [ FK, NN, UK ]
+  -country_id : **serial** [ FK ]
   overview : **text** [ NN ]
   other : **text**
-  created_at : **timestamp** [ NN, UK ]
-  updated_at : **timestamp** [ NN, UK ]
+  created_at : **timestamp** [ NN ]
+  updated_at : **timestamp** [ NN ]
 }
 
 entity "country_groups_en" as e03_en {
   +id : serial [ PK ]
   --
   label : **varchar(2)** [ NN, UK ]
-  created_at : **timestamp** [ NN, UK ]
-  updated_at : **timestamp** [ NN, UK ]
+  created_at : **timestamp** [ NN ]
+  updated_at : **timestamp** [ NN ]
 }
 
 entity "term" as term {

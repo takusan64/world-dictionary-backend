@@ -12,8 +12,8 @@ const useStyles = makeStyles((theme)  =>
     container: {
       marginTop: theme.spacing(1)
     }
-  }
-))
+  })
+)
 
 const Router = () => {
   const classes = useStyles()

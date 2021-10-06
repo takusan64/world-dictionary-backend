@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) =>
         padding: theme.spacing(1),
       }
     }
-  }
-))
+  })
+)
 
 const TopBar = () => {
   const matches = useMediaQuery('(min-width:600px)');
