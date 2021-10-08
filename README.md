@@ -18,9 +18,10 @@ docker-compose up doc
 ```
 
 ## My Task
-- [ ] response language is changed to query param
-- [ ] Adding request token feature
+- [x] response language is changed to query param
+- [x] Adding request token feature
 - [ ] Store Data change json file to DB Server
 - Document build to gh-pages
-  - [ ] Create RestAPI Document
-  - [ ] Create ERD Document
+  - [x] Create RestAPI Document
+  - [x] Create ERD Document
+- [ ] fixed open api (serial start value)

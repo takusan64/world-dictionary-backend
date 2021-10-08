@@ -74,12 +74,14 @@ insert into country_groups_ja(label) values
 
 insert into countries_ja(country_group_id, code, name, label) values
   (5, 'JP', 'にほん', '日本'),
-  (1, 'US', 'あめりか', 'アメリカ')
+  (1, 'US', 'あめりか', 'アメリカ'),
+  (1, 'IT', 'いたりあ', 'イタリア')
 ;
 
 insert into country_details_ja(country_id, overview, other) values
-  (1, 'overview', 'other'),
-  (2, 'overview', 'other')
+  (1, '日本概要', '日本備考'),
+  (2, 'アメリカ概要', 'アメリカ概要'),
+  (3, 'イタリア概要', 'イタリア概要')
 ;
 
 insert into country_groups_en(label) values
@@ -112,13 +114,15 @@ insert into country_groups_en(label) values
 ;
 
 insert into countries_en(country_group_id, code, name, label) values
-  (5, 'JP', 'japan', 'Japan'),
-  (1, 'US', 'amterica', 'America')
+  (10, 'JP', 'japan', 'Japan'),
+  (21, 'US', 'amterica', 'America'),
+  (9, 'IT', 'itaria', 'Itaria')
 ;
 
 insert into country_details_en(country_id, overview, other) values
-  (1, 'overview', 'other'),
-  (2, 'overview', 'other')
+  (1, 'japan overview', 'japan other'),
+  (2, 'amterica overview', 'amterica other'),
+  (3, 'itaria overview', 'itaria other')
 ;
 
 

@@ -7,7 +7,7 @@ class DataBase_Util(DB_Base):
     try:
       with self.create_connection() as connection:
         with connection.cursor() as cursor:
-          sql="SELECT version();"
+          sql="select version();"
           cursor.execute(sql)
           result = cursor.fetchall()
           print(result)

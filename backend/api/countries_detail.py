@@ -1,20 +1,21 @@
-from fastapi.encoders import jsonable_encoder
-import json
+from database.countries_detail import DataBase_Countries_Detail
+from openapi import query as query_model
 
-json_file_open = open('db.json', 'r')
-json_data = json.load(json_file_open)
+db_countries_detail = DataBase_Countries_Detail()
 
-def get_countries_detail(lang):
-  res = json_data['countries_detail'].get(lang, None)
-  return jsonable_encoder(res)
-
-def get_country_detail(country_id, lang):
-  countries_detail = json_data['countries_detail'].get(lang, None)
-  res = None
-  if not countries_detail:
-    return res
+def get_countries_detail(lang:query_model.Language_Enum):
+  countries_detail = db_countries_detail.get_countries_detail(lang)
+  if countries_detail:
+    keys=["country_id", "overview", "other"]
+    return list(map(lambda values: dict(zip(keys, values)), countries_detail))
   else:
-    for country_detail in countries_detail:
-      if country_detail["country_id"] == country_id:
-        res = country_detail
-        return res
+    return None
+
+def get_country_detail(country_id:int, lang:query_model.Language_Enum):
+  country_detail = db_countries_detail.get_country_detail(country_id, lang)
+  if country_detail:
+    keys=["country_id", "overview", "other"]
+    values=country_detail[0]
+    return dict(zip(keys, values))
+  else:
+    return None
