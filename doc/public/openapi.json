@@ -10,6 +10,71 @@
     "version": "1.0.0"
   },
   "paths": {
+    "/countries/{country_id}": {
+      "get": {
+        "tags": [
+          "country"
+        ],
+        "summary": "Get Country",
+        "operationId": "get_country_countries__country_id__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Country Id",
+              "maximum": 196.0,
+              "minimum": 1.0,
+              "type": "integer"
+            },
+            "name": "country_id",
+            "in": "path"
+          },
+          {
+            "required": false,
+            "schema": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/Language_Enum"
+                }
+              ],
+              "default": "ja"
+            },
+            "name": "lang",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Country"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "example": "Bad Request"
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/countries": {
       "get": {
         "tags": [
@@ -68,18 +133,20 @@
         }
       }
     },
-    "/countries/{country_id}": {
+    "/countries_detail/{country_id}": {
       "get": {
         "tags": [
-          "country"
+          "country_detail"
         ],
-        "summary": "Get Country",
-        "operationId": "get_country_countries__country_id__get",
+        "summary": "Get Country Detail",
+        "operationId": "get_country_detail_countries_detail__country_id__get",
         "parameters": [
           {
             "required": true,
             "schema": {
               "title": "Country Id",
+              "maximum": 196.0,
+              "minimum": 1.0,
               "type": "integer"
             },
             "name": "country_id",
@@ -105,7 +172,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Country"
+                  "$ref": "#/components/schemas/Country_Detail"
                 }
               }
             }
@@ -188,69 +255,6 @@
           }
         }
       }
-    },
-    "/countries_detail/{country_id}": {
-      "get": {
-        "tags": [
-          "country_detail"
-        ],
-        "summary": "Get Country Detail",
-        "operationId": "get_country_detail_countries_detail__country_id__get",
-        "parameters": [
-          {
-            "required": true,
-            "schema": {
-              "title": "Country Id",
-              "type": "integer"
-            },
-            "name": "country_id",
-            "in": "path"
-          },
-          {
-            "required": false,
-            "schema": {
-              "allOf": [
-                {
-                  "$ref": "#/components/schemas/Language_Enum"
-                }
-              ],
-              "default": "ja"
-            },
-            "name": "lang",
-            "in": "query"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Country_Detail"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "text/plain": {
-                "example": "Bad Request"
-              }
-            }
-          },
-          "422": {
-            "description": "Validation Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "components": {
@@ -269,6 +273,8 @@
         "properties": {
           "country_id": {
             "title": "Country Id",
+            "maximum": 196.0,
+            "minimum": 1.0,
             "type": "integer"
           },
           "country_code": {
@@ -285,6 +291,7 @@
           },
           "name_group_id": {
             "title": "Name Group Id",
+            "minimum": 1.0,
             "type": "integer"
           },
           "name_group_label": {
@@ -304,6 +311,8 @@
         "properties": {
           "country_id": {
             "title": "Country Id",
+            "maximum": 196.0,
+            "minimum": 1.0,
             "type": "integer"
           },
           "overview": {

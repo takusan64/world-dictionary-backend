@@ -1,10 +1,10 @@
 import psycopg2
 import psycopg2.extras
 from database.database import DB_Base
-from openapi import query as query_model
+from openapi import request as req_model
 
 class DataBase_Countries(DB_Base):
-  def get_countries(self, lang:query_model.Language_Enum):
+  def get_countries(self, lang:req_model.Language_Enum):
     try:
       with self.create_connection() as connection:
         with connection.cursor() as cursor:
@@ -19,7 +19,7 @@ class DataBase_Countries(DB_Base):
       print("DB rollback")
       print(e.args)
       return None
-  def get_country(self, country_id:int, lang:query_model.Language_Enum):
+  def get_country(self, country_id:int, lang:req_model.Language_Enum):
     try:
       with self.create_connection() as connection:
         with connection.cursor() as cursor:
