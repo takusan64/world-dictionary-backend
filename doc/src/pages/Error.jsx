@@ -4,8 +4,9 @@ const Error = () => {
 
 return(
 <div>
- <h2>404</h2>
+ <h2>404：Not Found</h2>
  <p>Sorry, the page you're looking con not found.</p>
+ <p>Click on the app bar to go to the page you want to use.</p>
 </div>
  )
 }

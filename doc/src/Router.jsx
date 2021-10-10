@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Route, Switch } from "react-router-dom"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 import { Container } from '@material-ui/core'
 import { makeStyles , createStyles} from '@material-ui/styles'
 import ERD from './pages/ERD'
@@ -15,12 +15,15 @@ const useStyles = makeStyles((theme)  =>
   })
 )
 
+const ROUTER_BASENAME =
+  process.env.NODE_ENV === 'development' ? '/' : '/world-dictionary-backend';
+
 const Router = () => {
   const classes = useStyles()
 
   return (
     <>
-      <HashRouter>
+      <BrowserRouter basename={ROUTER_BASENAME}>
         <TopBar />
         <Container className={classes.container} maxWidth="xl">
           <Switch>
@@ -29,7 +32,7 @@ const Router = () => {
             <Route component={Error} />
           </Switch>
         </Container>
-      </HashRouter>
+      </BrowserRouter>
     </>
   )
 }
