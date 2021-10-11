@@ -6,6 +6,7 @@ import ERD from './pages/ERD'
 import ApiDoc from './pages/ApiDoc'
 import Error from './pages/Error'
 import TopBar from './components/TopBar'
+import Footer from './components/Footer'
 
 const useStyles = makeStyles((theme)  =>
   createStyles({
@@ -32,6 +33,7 @@ const Router = () => {
             <Route component={Error} />
           </Switch>
         </Container>
+        <Footer />
       </BrowserRouter>
     </>
   )
